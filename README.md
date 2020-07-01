@@ -32,5 +32,8 @@
   - テクスチャを横に並べた形式
   - pngファイルとして出力
 
+## 関連
+- [【Unity】シーンからCubemapを作成してpngファイルで出力するツールを作ってみた](https://tsgcpp.hateblo.jp/entry/2020/07/01/204528)
+
 ## ライセンス
 - [LICENSE](./LICENSE)を参照
