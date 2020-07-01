@@ -13,6 +13,14 @@
 4. Width(縦横兼用), File Type, Render From Positionを指定
 5. "Generate!"ボタンをクリックし、出力先を指定して保存
 
+### 出力された画像の補足
+現時点では出力された画像のInspector上のTextureShape, Mappingは自動で設定されません。  
+以下のように設定することを推奨します。
+
+- TextureShape: Cube
+- Mapping: 6 Frames Layout (Cubic Environment)
+- 設定をApply
+
 ## FileTypeについて
 出力される画像の形式を指定。  
 [Cubemaps](https://docs.unity3d.com/Manual/class-Cubemap.html)に記載されている形式に準拠します。
