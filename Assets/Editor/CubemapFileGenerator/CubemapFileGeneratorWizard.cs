@@ -4,7 +4,7 @@ using System.IO;
 
 namespace CubemapFileGenerator
 {
-    public class RenderCubemapWizard : ScriptableWizard
+    public class CubemapFileGeneratorWizard : ScriptableWizard
     {
         public int width = 256;
         public FileType fileType = FileType.VerticalPng;
@@ -16,7 +16,7 @@ namespace CubemapFileGenerator
         [MenuItem("CubemapFileGenerator/Generate cubemap file")]
         static void RenderCubemap()
         {
-            ScriptableWizard.DisplayWizard<RenderCubemapWizard>(
+            ScriptableWizard.DisplayWizard<CubemapFileGeneratorWizard>(
                 "Generate cubemap file", "Generate!");
         }
 
