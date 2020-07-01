@@ -16,13 +16,13 @@ namespace CubemapFileGenerator
             // SetPixelsが画像の左下から右上に描画していくため、
             // 下から上の順番でコピー
             var faces = new CubemapFace[] {
-            CubemapFace.NegativeZ,
-            CubemapFace.PositiveZ,
-            CubemapFace.NegativeY,
-            CubemapFace.PositiveY,
-            CubemapFace.NegativeX,
-            CubemapFace.PositiveX,
-        };
+                CubemapFace.NegativeZ,
+                CubemapFace.PositiveZ,
+                CubemapFace.NegativeY,
+                CubemapFace.PositiveY,
+                CubemapFace.NegativeX,
+                CubemapFace.PositiveX,
+            };
 
             int y = 0;
             foreach (var face in faces) {

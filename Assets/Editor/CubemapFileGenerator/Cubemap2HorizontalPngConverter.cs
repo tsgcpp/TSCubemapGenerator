@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace CubemapFileGenerator
 {
@@ -16,13 +14,13 @@ namespace CubemapFileGenerator
                 TextureFormat.RGB24, false);
 
             var faces = new CubemapFace[] {
-            CubemapFace.PositiveX,
-            CubemapFace.NegativeX,
-            CubemapFace.PositiveY,
-            CubemapFace.NegativeY,
-            CubemapFace.PositiveZ,
-            CubemapFace.NegativeZ,
-        };
+                CubemapFace.PositiveX,
+                CubemapFace.NegativeX,
+                CubemapFace.PositiveY,
+                CubemapFace.NegativeY,
+                CubemapFace.PositiveZ,
+                CubemapFace.NegativeZ,
+            };
 
             int x = 0;
             foreach (var face in faces) {
