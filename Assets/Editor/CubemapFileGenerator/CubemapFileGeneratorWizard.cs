@@ -6,8 +6,13 @@ namespace CubemapFileGenerator
 {
     public class CubemapFileGeneratorWizard : ScriptableWizard
     {
+        [Tooltip("テクスチャの縦および横のサイズ.")]
         public int width = 256;
+
+        [Tooltip("出力するファイルの形式.")]
         public FileType fileType = FileType.VerticalPng;
+
+        [Tooltip("Cubemapのレンダリングの中心地点.\n\"CubemapRenderingPoint\"という名前のオブジェクトがシーンにある場合は自動でセットされる.")]
         public Transform renderFromPosition;
 
         // レンダリングカメラの位置を表すGameObjectの名前
