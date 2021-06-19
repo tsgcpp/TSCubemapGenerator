@@ -1,0 +1,16 @@
+{
+    "name": "com.tsgcpp.tscubemapgenerator",
+    "version": "1.0.0",
+    "displayName": "TSCubemapGenerator",
+    "description": "Cubemap generation (scene baking) tool.",
+    "unity": "2019.4",
+    "keywords": [
+        "cubemap"
+    ],
+    "license": "MIT",
+    "dependencies": {},
+    "author": {
+        "name": "tsgcpp",
+        "url": "https://github.com/tsgcpp"
+    }
+}
