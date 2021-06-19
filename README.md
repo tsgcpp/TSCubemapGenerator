@@ -1,39 +1,59 @@
-# CubemapFileGenerator-Unity
-シーンからCubemap形式のpngファイルを生成するUnity向けEditorツール
+# TSCubemapGenerator
+Cubemap generation tool for Unity
 
-## インストール
-1. [Releases](https://github.com/tsgcpp/CubemapFileGenerator-Unity/releases)より"CubemapFileGenerator.unitypackage"をダウンロード
-2. "CubemapFileGenerator.unitypackage"をインストール
+## Installation
 
-## 使用方法
-1. Cubemap化したいSceneを作成しエディター上にロード
-2. Cubemapの中心位置にGameObjectを配置
-  - 名前を`CubemapRenderingPoint`とすると、自動でツールに設定されます
-3. タブのCubemapFileGenerator -> Generate cubemap file
-4. Width(縦横兼用), File Type, Render From Positionを指定
-5. "Generate!"ボタンをクリックし、出力先を指定して保存
+### Package Manager
+- Window -> Package Manager
+- Add package from git URL...
+- Add the package URL
+  - `https://github.com/tsgcpp/TSCubemapGenerator.git?path=Assets/Plugins/TSCubemapGenerator#1.0.0`
 
-### 出力された画像の補足
-現時点では出力された画像のInspector上のTextureShape, Mappingは自動で設定されません。  
-以下のように設定することを推奨します。
+#### About Package Manager
+https://docs.unity3d.com/Manual/upm-ui.html
 
-- TextureShape: Cube
-- Mapping: 6 Frames Layout (Cubic Environment)
-- 設定をApply
+## Support Unity Version
+- Unity 2019.4 or later
 
-## FileTypeについて
-出力される画像の形式を指定。  
-[Cubemaps](https://docs.unity3d.com/Manual/class-Cubemap.html)に記載されている形式に準拠します。
+## Usage
+- You can watch the flow in this movie
+  - https://youtu.be/ARbiXirv1BY
 
+### 1. Open Tool Window
+- TSCubemapGenerator -> Open Tool Window
+
+![](./Documents/Images/open_tool_window.jpg)
+
+### 2. Setup
+- Load a scene to be baked into Cubemap
+- Create a `Camera` to render the scene
+  - You should add `Skybox` component with a skybox material and to the `Camera`
+- Set a material for preview to `Preview Material` in the tool
+  - You can also use `PreviewMaterial.mat` in the package
+- Click `Start` button
+
+### 3. Rendering
+- Move the `Camera` to a rendering point
+- Click `Render Cubemap`
+  - You can also use `Enable Realtime Rendering` to update the cubemap automatically
+  - WARNING: `Enable Realtime Rendering` is **heavy**, so you should use this with low size
+
+### 4. Export
+- Click `Export Cubemap to File`
+
+#### Appendix
+- If the cubemap folder is under `Assets`, the cubemap will be imported as a Cubemap asset
+- If not so, you should set the parameters to the cubemap
+  - TextureShape: Cube
+  - Mapping: 6 Frames Layout (Cubic Environment)
+
+## FileType
 - VerticalPng
-  - テクスチャを縦に並べた形式
-  - pngファイルとして出力
+  - PNG images with vertical cross layout
 - HorizontalPng
-  - テクスチャを横に並べた形式
-  - pngファイルとして出力
+  - PNG images with horizontal cross layout
 
-## 関連
-- [【Unity】シーンからCubemapを作成してpngファイルで出力するツールを作ってみた](https://tsgcpp.hateblo.jp/entry/2020/07/01/204528)
+[Cubemaps](https://docs.unity3d.com/Manual/class-Cubemap.html)
 
-## ライセンス
-- [LICENSE](./LICENSE)を参照
+## License
+- [LICENSE](./LICENSE)
