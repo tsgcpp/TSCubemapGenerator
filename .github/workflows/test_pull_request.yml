@@ -17,8 +17,7 @@ jobs:
         unityVersion:
           - 2020.3.12f1
         testMode:
-          - playmode
-          - editmode
+          - all
     steps:
       - uses: actions/checkout@v2
         with:
