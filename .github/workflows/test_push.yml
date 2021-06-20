@@ -1,7 +1,7 @@
 name: Test project
 
 on:
-  pull:
+  push:
     branches:
       - master
 
