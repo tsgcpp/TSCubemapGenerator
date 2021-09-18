@@ -3,11 +3,19 @@ Cubemap generation tool for Unity
 
 ## Installation
 
-### Package Manager
+### Package Manager with git URL
 - Window -> Package Manager
 - Add package from git URL...
 - Add the package URL
   - `https://github.com/tsgcpp/TSCubemapGenerator.git?path=Assets/Plugins/TSCubemapGenerator#1.0.0`
+
+### Package Manager with OpenUPM
+- Install the package via openupm-cli
+  - https://openupm.com/
+
+```shell
+$ openupm add com.tsgcpp.tscubemapgenerator
+```
 
 #### About Package Manager
 https://docs.unity3d.com/Manual/upm-ui.html
