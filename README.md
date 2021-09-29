@@ -1,6 +1,8 @@
 # TSCubemapGenerator
 Cubemap generation tool for Unity
 
+![](./Documents/Images/thumbnail.jpg)
+
 ## Installation
 
 ### Package Manager with git URL
